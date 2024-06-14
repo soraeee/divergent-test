@@ -32,5 +32,5 @@ npm install
 
 To run the backend:
 ```
-npx nodemon start
+npx nodemon index.ts
 ```
