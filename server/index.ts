@@ -173,27 +173,6 @@ const addWarehouse = (req, res) => {
 
 }
 
-/*const addWarehouse = (args: {warehouse: WarehouseInput}): Boolean => {
-	// very silly promise chain
-	warehouses.create()
-		.then(result => {
-			args.warehouse.zones.forEach((zone: Zone) => {
-				zones.create({
-					label: zone.label,
-					warehouse_id: result.id,
-				}).then(result => {
-					zone.shelves.forEach((shelf: Shelf) => {
-						shelves.create({
-							name: shelf.name,
-							zone_id: result.id,
-						})
-					})
-				})
-			})
-		})
-	return true;
-}*/
-
 app.get('/', (req, res) => {
 	res.send('cool server');
 });
